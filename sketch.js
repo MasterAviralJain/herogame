@@ -16,10 +16,10 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
 
-  ground = new Ground(600, 600, 1200, 20);
+  ground = new Ground(600, 690, 1200, 20);
 
-  hero = new Hero(400,800,300);
-  rope = new Rope(hero.body, { x: 500, y: 50 });
+  hero = new Hero(400,550,300);
+  rope = new Rope(hero.body, { x: 400, y: 50 });
   monster = new Monster(1100,550,300);
 
   box1 = new Box(600, 100, 70, 70);
@@ -98,7 +98,7 @@ console.log(hero.body.position.y,hero.body.position.x)
 
 
   hero.display();
-  rope.display();
+ // rope.display();
   monster.display();
 
 }
